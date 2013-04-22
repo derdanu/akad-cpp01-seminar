@@ -46,6 +46,6 @@ int gcd (int a, int b)
 	int
 main ( int argc, char *argv[] )
 {
-	printf ( "GGT von 21033 und 56589 = %i\n", gcd(21033, 56589));
+	printf ( "GGT von 21033 und 56580 = %i\n", gcd(21033, 56580));
 	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */
