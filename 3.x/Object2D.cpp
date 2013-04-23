@@ -43,6 +43,12 @@ const double Object2D::perimeter() {
 	return 0.0;
 }
 
+string Object2D::getType() const {
+
+	return type;
+
+}
+
 ostream& Object2D::print(ostream& strm) {
 
 	strm << "Typ: " << type << " ";

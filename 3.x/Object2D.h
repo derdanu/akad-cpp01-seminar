@@ -27,7 +27,7 @@ class Object2D
 
 		virtual	const double area();
 		virtual const double perimeter();
-
+		string getType() const;
 		/* ====================  MUTATORS      ======================================= */
 
 		/* ====================  OPERATORS     ======================================= */
