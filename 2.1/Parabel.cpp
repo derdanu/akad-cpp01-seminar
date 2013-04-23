@@ -78,6 +78,11 @@ int Parabel::nullstellen(double& x1, double& x2) {
 	return i;
 }
 
+ostream& operator<<(ostream& strm, Parabel& p) {
 
+	strm << "Parabel [a=" << p.getA() << " ,b=" << p.getB() << " ,c=" << p.getC() << "]";
+	return strm;
+
+}
 
 

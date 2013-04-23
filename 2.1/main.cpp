@@ -42,8 +42,8 @@ main ( int argc, char *argv[] )
 	p.setB(4);
 	p.setC(10);
 	
-	cout << "A: " << p.getA() << " B: " << p.getB() << " C: " << p.getC() << endl;
-	
+	cout << p << endl;	
+
 	for (i=-2; i<=2; i++) {
 
 		cout << "Funktionswert fuer " << setw(2) << i << "  : " << setw(4)  << p(i) << endl;

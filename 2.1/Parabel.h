@@ -17,6 +17,9 @@
  */
 
 
+#include <iostream>;
+
+using namespace std;
 
 
 /*
@@ -43,6 +46,7 @@ class Parabel
 		/* ====================  OPERATORS     ======================================= */
 		double operator()(double x) const;
 		int nullstellen(double& x1, double& x2);
+
 	protected:
 		/* ====================  METHODS       ======================================= */
 
@@ -57,4 +61,6 @@ class Parabel
 }; /* -----  end of class Parabel  ----- */
 
 
+
+ostream& operator<<(ostream& strm, Parabel& p);
 
