@@ -54,7 +54,7 @@ void Parabel::setC(double c) {
 
 double Parabel::operator()(double x) const {
 
-	return a * pow(x, 2) - b * x + c;
+	return a * pow(x, 2) + b * x + c;
 
 }		
 

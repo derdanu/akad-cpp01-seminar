@@ -44,17 +44,17 @@ main ( int argc, char *argv[] )
 	
 	cout << "A: " << p.getA() << " B: " << p.getB() << " C: " << p.getC() << endl;
 	
-	for (i=0; i<=23; i++) {
+	for (i=-2; i<=2; i++) {
 
 		cout << "Funktionswert fuer " << setw(2) << i << "  : " << setw(4)  << p(i) << endl;
 	}	
 
-		x = p.nullstellen(x1, x2);
-		if (x == 0) {
-			cout << "Keine Nullstellen" << endl;
-		} else {
-			cout << x << " Nullstelle(n) x1: " << x1 << " x2: " << x2 << endl;
-		}
+	x = p.nullstellen(x1, x2);
+	if (x == 0) {
+		cout << "Keine Nullstellen" << endl;
+	} else {
+		cout << x << " Nullstelle(n) x1: " << x1 << " x2: " << x2 << endl;
+	}
 		
 	
 
