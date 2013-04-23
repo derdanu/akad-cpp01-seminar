@@ -31,18 +31,6 @@ Object2D::~Object2D() {
 
 }
 
-
-const double Object2D::area() {
-
-	return 0.0;
-
-}
-
-const double Object2D::perimeter() {
-
-	return 0.0;
-}
-
 string Object2D::getType() const {
 
 	return type;

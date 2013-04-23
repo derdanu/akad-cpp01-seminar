@@ -18,8 +18,8 @@ class Circle: public Object2D
 
 		double radius;
 		/* ====================  ACCESSORS     ======================================= */
-		const double area();
-		const double perimeter();	
+		virtual double area() const;
+		virtual double perimeter() const;	
 	
 		/* ====================  MUTATORS      ======================================= */
 

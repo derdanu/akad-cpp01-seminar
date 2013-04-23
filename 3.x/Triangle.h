@@ -18,8 +18,8 @@ class Triangle: public Object2D
 
 		double length;
 		/* ====================  ACCESSORS     ======================================= */
-		const double area();
-		const double perimeter();	
+		virtual double area() const;
+		virtual double perimeter() const;	
 
 		/* ====================  MUTATORS      ======================================= */
 

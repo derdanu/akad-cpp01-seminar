@@ -26,12 +26,12 @@ Circle::Circle(double radius) {
 
 }
 
-const double Circle::area() {
+double Circle::area() const {
 
 	return 2 * M_PI * radius;
 }
 
-const double Circle::perimeter() {
+double Circle::perimeter() const {
 
 	return radius * radius * M_PI ;
 }	

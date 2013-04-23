@@ -33,13 +33,13 @@ Rectangle::~Rectangle() {
 
 }
 
-const double Rectangle::area() {
+double Rectangle::area() const {
 
 	return width * height;
 
 }
 
-const double Rectangle::perimeter() {
+double Rectangle::perimeter() const {
 
 	return 2 * width + 2 * height;
 

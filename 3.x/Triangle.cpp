@@ -26,14 +26,14 @@ Triangle::Triangle(double length) {
 
 }
 
-const double Triangle::area() {
+double Triangle::area() const {
 
 	return (sqrt(3) / 4) * length * length;
 
 }
 	
 
-const double Triangle::perimeter() {
+double Triangle::perimeter() const {
 
 	return 3 * length;
 	

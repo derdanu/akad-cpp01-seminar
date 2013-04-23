@@ -25,8 +25,8 @@ class Object2D
 		~Object2D();
 		/* ====================  ACCESSORS     ======================================= */
 
-		virtual	const double area();
-		virtual const double perimeter();
+		virtual double area() const = 0;
+		virtual double perimeter() const = 0;
 		string getType() const;
 		/* ====================  MUTATORS      ======================================= */
 
