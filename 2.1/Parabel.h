@@ -41,7 +41,7 @@ class Parabel
 		void setB(double b);
 		void setC(double c);
 		/* ====================  OPERATORS     ======================================= */
-		double operatorfunc(double x);
+		double operator()(double x) const;
 		int nullstellen(double& x1, double& x2);
 	protected:
 		/* ====================  METHODS       ======================================= */

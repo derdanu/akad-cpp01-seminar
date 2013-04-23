@@ -52,12 +52,11 @@ void Parabel::setC(double c) {
 	this->c = c;
 }
 
-double Parabel::operatorfunc(double x) {
-	double erg;
+double Parabel::operator()(double x) const {
 
-	erg = a * pow(x, 2) - b * x + c;
-	return erg;	
-}
+	return a * pow(x, 2) - b * x + c;
+
+}		
 
 int Parabel::nullstellen(double& x1, double& x2) {
 	int i;

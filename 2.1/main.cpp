@@ -46,7 +46,7 @@ main ( int argc, char *argv[] )
 	
 	for (i=0; i<=23; i++) {
 
-		cout << "Funktionswert fuer " << setw(2) << i << "  : " << setw(4)  << p.operatorfunc(i) << endl;
+		cout << "Funktionswert fuer " << setw(2) << i << "  : " << setw(4)  << p(i) << endl;
 	}	
 
 		x = p.nullstellen(x1, x2);
