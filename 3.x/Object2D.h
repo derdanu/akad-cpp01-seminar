@@ -1,5 +1,6 @@
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -30,8 +31,7 @@ class Object2D
 		/* ====================  MUTATORS      ======================================= */
 
 		/* ====================  OPERATORS     ======================================= */
-		ostream& print(ostream& strm);
-		ostream& operator<<(ostream& aus);
+		virtual ostream& print(ostream& strm);
 	protected:
 		/* ====================  METHODS       ======================================= */
 
@@ -43,5 +43,8 @@ class Object2D
 		/* ====================  DATA MEMBERS  ======================================= */
 
 }; /* -----  end of class Object2D  ----- */
+
+ostream& operator<<(ostream& aus, Object2D& o);
+
 
 #endif

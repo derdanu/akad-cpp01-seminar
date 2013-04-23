@@ -21,7 +21,6 @@
 
 Circle::Circle(double radius) {
 
-
 	type = "Circle";
 	this->radius = radius;
 
@@ -37,5 +36,10 @@ const double Circle::perimeter() {
 	return radius * radius * M_PI ;
 }	
 
-	
+ostream& Circle::print(ostream& strm) {
+	Object2D::print(strm);
+	strm << "Radius: " << radius;
+	return strm;
+
+}
 

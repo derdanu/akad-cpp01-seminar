@@ -44,3 +44,11 @@ const double Rectangle::perimeter() {
 	return 2 * width + 2 * height;
 
 }
+
+ostream& Rectangle::print(ostream& strm) {
+	Object2D::print(strm);
+	strm << "Width: " << width << " Height: " << height;
+	return strm;
+
+}
+

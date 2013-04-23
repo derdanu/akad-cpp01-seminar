@@ -43,3 +43,15 @@ const double Object2D::perimeter() {
 	return 0.0;
 }
 
+ostream& Object2D::print(ostream& strm) {
+
+	strm << "Typ: " << type << " ";
+	return strm;
+
+}
+
+ostream& operator<<(ostream& strm, Object2D& o) {
+
+	return o.print(strm);
+
+}

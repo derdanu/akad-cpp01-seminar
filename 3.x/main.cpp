@@ -53,7 +53,7 @@ main ( int argc, char *argv[] )
 
 	for (i=0; i<5; i++) {
 
-		cout << "i: " << i << " Area: " << o[i]->area() << " Perimeter: " << o[i]->perimeter() << endl;
+		cout << "i: " << i << " " << *o[i] << " Area: " << o[i]->area() << " Perimeter: " << o[i]->perimeter() << endl;
 
 	}
 

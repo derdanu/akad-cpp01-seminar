@@ -38,3 +38,11 @@ const double Triangle::perimeter() {
 	return 3 * length;
 	
 }
+
+ostream& Triangle::print(ostream& strm) {
+	Object2D::print(strm);
+	strm << "Length: " << length;
+	return strm;
+
+}
+
