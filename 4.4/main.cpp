@@ -46,9 +46,14 @@ main ( int argc, char *argv[] )
 		string ciphertext = "554151150443005541141204534100022053140500554355515451351251521111445314022443351443415124";
 		cout << "Encrypting: " << plaintext << " -> " << c.encrypt(plaintext) << endl;;
 		cout << "Decrypting: " <<  ciphertext << " -> " << c.decrypt(ciphertext) << endl;
+		
+		cout << endl;
+
 		cout << "Erzeuge zufaelligen Schluessel " << endl;;
-		c.randomKey();
-		c.printTable();
+		key = c.randomKey();
+		if (c.setKey(key)) {
+			c.printTable();
+		}
 	}
 
 

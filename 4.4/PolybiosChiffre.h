@@ -24,7 +24,7 @@ class PolybiosChiffre
 		bool setKey(const string& key);
 		string encrypt(const string& plain_text);
 		string decrypt(const string& cipher_text);
-		void randomKey();
+		string randomKey();
 	protected:
 		/* ====================  METHODS       ======================================= */
 

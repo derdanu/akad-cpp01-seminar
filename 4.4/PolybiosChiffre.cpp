@@ -135,24 +135,23 @@ void PolybiosChiffre::printTable() {
 
 }
 
-void PolybiosChiffre::randomKey() {
+string PolybiosChiffre::randomKey() {
 
-	srand (time(NULL));
-	
-	int i,j,r;
+	string key = "0123456789abcdefghijklmnopqrstuvwxyz";
+	char c;
+	unsigned int pos, i;
 
+	srand(time(NULL));
 
-	for (i=0; i<6; i++) {
-		for (j=0; j<6; j++) {
+ 	for (i = 0; i < key.length(); i++ ){
 
-			r = rand() % 25 + 97;
-			// Todo, Prüfen ob Wert schon vorhanden. 0-9 miteinbeziehen.		
-			quadrat[i][j] =  static_cast<char>(r);
+		pos = rand() % key.length();
+		c = key[pos];
+		key[pos] = key[i];
+		key[i] = c;
 
-		
-		}
-	
 	}
 
+	return key;
 
 }
